@@ -1,0 +1,504 @@
+@media(max-width: 1140px) {
+
+    .promo {
+        &__box {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        .form {
+            &__input {
+                width: 215px;
+            }
+
+            &__btn {
+                padding-left: 42px;
+                padding-right: 42px;
+            }
+
+        }
+    }
+
+    .portfolio {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        &__box {
+            padding: 40px 20px 62px;
+            background-color: #4169c1;
+        }
+    }
+
+
+    .about {
+        &__img {
+            flex-shrink: 1;
+        }
+    }
+
+    .contacts {
+        &__connect {
+            align-self: flex-start;
+            padding: 40px 27px 43px 26px;
+        }
+
+        &__info {
+            margin-right: 0;
+        }
+    }
+
+
+
+}
+
+@media(max-width: 1023px) {
+    .header {
+        &__menu-link {
+            padding: 38px 10px;
+        }
+    }
+
+    .geography {
+        &__text {
+            flex-basis: 401px;
+        }
+    }
+
+    .portfolio {
+        &__slide {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &__img {
+            align-self: center;
+        }
+
+        &__box {
+            padding: 40px 20px;
+            margin-top: -190px;
+        }
+
+        &__text {
+            max-width: none;
+        }
+
+        &__list {
+            width: auto;
+        }
+    }
+
+    .about {
+        &__box {
+            padding: 45px 40px;
+        }
+    }
+}
+
+@media(max-width: 960px) {
+    .burger {
+        display: block;
+        position: relative;
+        z-index: 11;
+    }
+
+    .header {
+        padding: 22px 0;
+
+        &__menu {
+            position: fixed;
+            top: 0;
+            right: -150%;
+            width: 100%;
+            height: 100vh;
+            overflow-y: scroll;
+            background-color: #F4F8FF;
+            z-index: 10;
+            transition: right .5s;
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &__menu-list {
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__menu-item {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__menu-link {
+            padding: 0;
+            font-size: 45px;
+            line-height: 60px;
+        }
+    }
+
+    .promo {
+        padding-top: 76px;
+
+        &__title {
+            font-size: 38px;
+            line-height: 48px;
+        }
+
+        &__text {
+            text-align: center;
+            max-width: 460px;
+            margin-bottom: 22px;
+        }
+
+        &__box-title {
+            max-width: 350px;
+        }
+
+        .form {
+            flex-direction: column;
+            align-items: stretch;
+
+            &__input {
+                width: 100%;
+            }
+
+            &__title {
+                margin-bottom: 16px;
+            }
+
+            &__btn {
+                align-self: stretch;
+            }
+        }
+    }
+
+    .geography {
+        padding-bottom: 38px;
+
+        &__inner {
+            flex-wrap: wrap;
+        }
+
+        &__text {
+            flex-basis: 481px;
+        }
+    }
+
+    .portfolio {
+        padding: 59px 0 134px;
+
+        &__slider-btn {
+            top: auto;
+            bottom: -120px;
+
+            &_prev {
+                left: 0;
+            }
+
+            &_next {
+                right: 0;
+            }
+        }
+
+        &__img {
+            width: 100%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__item {
+            flex-basis: 43%;
+        }
+    }
+
+    .advantages {
+        &__list {
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+
+        &__item {
+            flex-direction: column;
+        }
+
+        &__img {
+            margin-bottom: 11px;
+        }
+    }
+
+    .about {
+        padding: 0;
+        padding-top: 70px;
+        margin-bottom: 70px;
+
+        &__inner {
+            flex-direction: column;
+        }
+
+        &__box {
+            margin-bottom: -136px;
+            padding: 50px 120px 48px 59px;
+        }
+
+        &__img {
+            width: 100vw;
+            margin-left: 0;
+        }
+    }
+
+    .contacts {
+        padding: 0;
+        padding-top: 42px;
+
+        &__inner {
+            align-items: flex-start;
+        }
+
+        &__link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__connect {
+            margin-top: 0;
+            padding: 30px 42px 23px 40px;
+            flex-basis: 60%;
+            margin-bottom: -120px;
+        }
+
+        &__form {
+            flex-direction: column;
+        }
+    }
+
+    .form__title {
+        width: 100%;
+    }
+
+    .form__input {
+        width: 100%;
+    }
+
+    .form__data {
+        margin-right: 0;
+    }
+
+    .form__policy {
+        display: none;
+
+        &_mobile {
+            margin-top: 12px;
+            display: flex;
+        }
+    }
+
+    .footer {
+        &__inner {
+            align-items: stretch;
+            justify-content: stretch;
+            flex-direction: column;
+        }
+
+        &__text {
+            margin-bottom: 46px;
+        }
+
+        &__author {
+            max-width: 174px;
+        }
+    }
+}
+
+@media(max-width: 639px) {
+    .title {
+        font-size: 30px;
+        line-height: 39px;
+
+        &_size_22 {
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+
+    .header {
+        &__phone {
+            display: none;
+        }
+    }
+
+    .promo {
+        &__title {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+
+    .geography {
+        &__text {
+            flex-basis: 100%;
+        }
+    }
+
+    .portfolio {
+        padding-top: 47px;
+
+        &__list {
+            margin-bottom: 29px;
+        }
+
+        &__item {
+            flex-basis: 100%;
+        }
+    }
+
+    .advantages {
+        padding: 66px 0 50px;
+
+        &__descr {
+            max-width: none;
+        }
+    }
+
+    .about {
+        padding: 62px 0 65px;
+        margin-bottom: 0;
+
+        &__title {
+            margin-bottom: 25px;
+        }
+
+        &__box {
+            padding: 42px 28px 55px 31px;
+        }
+    }
+
+    .contacts {
+        padding-bottom: 120px;
+
+        .container {
+            padding: 0;
+        }
+
+        &__inner {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &__connect {
+            width: 100vw;
+        }
+
+        &__info {
+            padding: 0 15px;
+            margin-bottom: 36px;
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .title {
+        font-size: 26px;
+        line-height: 33px;
+
+        &_size_22 {
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+
+    .btn_big {
+        min-width: 235px;
+    }
+
+    .header {
+        &__menu-link {
+            font-size: 35px;
+            line-height: 50px;
+        }
+    }
+
+    .promo {
+        &__text {
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        &__box {
+            padding: 33px 28px 43px;
+
+        }
+
+        &__box-title {
+            max-width: 200px;
+        }
+    }
+
+    .geography {
+        &__subtitle {
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 11px;
+        }
+
+        &__descr {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .portfolio {
+        &__box {
+            margin-top: -80px;
+            padding: 30px 30px 32px 28px;
+
+            &-title {
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+
+        &__descr {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .about {
+        &__text {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__box {
+            padding-left: 26px;
+            padding-right: 26px;
+        }
+
+        &__images {
+            display: flex;
+
+            img {
+                width: 110px;
+                height: 159px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .contacts {
+        &__connect {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    .form__comm .form__btn {
+        width: 100%;
+    }
+}

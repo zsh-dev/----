@@ -1,0 +1,46 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu-list {
+        display: flex;
+    }
+
+    &__menu-link {
+        padding: 38px 18px;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #001A33;
+        transition: .5s;
+        &:hover {
+            background-color: #4169C1;
+            color: #fff;
+        }
+    }
+
+    &__phone {
+        position: relative;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        color: #0B0B0B;
+        padding-left: 42px;
+        &:hover {
+            text-decoration: underline;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 32px;
+            height: 32px;
+            background-image: url(../img/phone.svg);
+        }
+    }
+}

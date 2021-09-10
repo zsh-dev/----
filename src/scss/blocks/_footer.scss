@@ -1,0 +1,35 @@
+.footer {
+    padding: 35px 0 40px;
+    background-color: #001A33;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.53);
+    }
+
+    &__author {
+        position: relative;
+        font-size: 14px;
+        line-height: 18px;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        padding-left: 22px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0px;
+            background-image: url(../img/footer-icon.svg);
+            width: 14px;
+            height: 18px;
+        }
+    }
+}

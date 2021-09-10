@@ -1,0 +1,27 @@
+.geography {
+    padding: 129px 0 64px;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__text {
+        flex-shrink: 0;
+        flex-basis: 481px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        line-height: 33px;
+        color: #001A33;
+        margin-bottom: 19px;
+    }
+
+    &__descr {
+        color: rgba(0, 26, 51, 0.7);
+    }
+}

@@ -1,0 +1,85 @@
+.contacts {
+    padding: 60px 0;
+    background-color: #4169C1;
+
+    &__inner {
+        display: flex;
+
+    }
+
+    &__info {
+        margin-right: 90px;
+    }
+
+    &__title {
+        color: #fff;
+        margin-bottom: 24px;
+    }
+
+    &__data {
+        margin-bottom: 28px;
+    }
+
+    &__data-wrap {
+        display: flex;
+        margin-bottom: 13px;
+    }
+
+    &__name {
+        flex:0 0 100px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+    }
+    &__links {
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        opacity: 0.7;
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__social {
+        margin-top: 29px;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: red;
+        }
+    }
+
+    &__connect {
+        flex-basis: 718px;
+        padding: 40px 57px 43px 76px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: -92px;
+        .form {
+            align-items: stretch;
+            justify-content: stretch;
+        }
+        .form__title {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__connect-title {
+        margin-bottom: 20px;
+    }
+  
+
+  
+}
