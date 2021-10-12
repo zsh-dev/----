@@ -60,26 +60,33 @@
         }
     }
 
-    &__connect {
-        flex-basis: 718px;
-        padding: 40px 57px 43px 76px;
-        background-color: #FFFFFF;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        margin-top: -92px;
-        .form {
-            align-items: stretch;
-            justify-content: stretch;
-        }
-        .form__title {
-            margin-bottom: 10px;
-        }
+    &__box {
+margin-top: -92px;
     }
 
-    &__connect-title {
-        margin-bottom: 20px;
-    }
   
 
   
 }
+
+
+.ask-box {
+    width: 718px;
+    padding: 40px 57px 43px 76px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+    &__title {
+        margin-bottom: 20px;
+    }
+    .form {
+        align-items: stretch;
+        justify-content: stretch;
+    }
+    .form__title {
+        margin-bottom: 10px;
+    }
+}
+
+

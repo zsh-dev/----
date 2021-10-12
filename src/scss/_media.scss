@@ -1,10 +1,7 @@
 @media(max-width: 1140px) {
 
     .promo {
-        &__box {
-            padding-left: 32px;
-            padding-right: 32px;
-        }
+
 
         .form {
             &__input {
@@ -17,6 +14,11 @@
             }
 
         }
+    }
+
+    .form-box {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 
     .portfolio {
@@ -37,14 +39,18 @@
     }
 
     .contacts {
-        &__connect {
+        &__box {
             align-self: flex-start;
-            padding: 40px 27px 43px 26px;
+
         }
 
         &__info {
             margin-right: 0;
         }
+    }
+
+    .ask-box {
+        padding: 40px 27px 43px 26px;
     }
 
 
@@ -155,26 +161,34 @@
             margin-bottom: 22px;
         }
 
-        &__box-title {
-            max-width: 350px;
-        }
+
 
         .form {
-            flex-direction: column;
             align-items: stretch;
+            flex-wrap: wrap;
+            justify-content: center;
 
             &__input {
                 width: 100%;
             }
 
             &__title {
-                margin-bottom: 16px;
+                width: 30%;
+
+                &:not(:last-child) {
+                    margin-right: 15px;
+                }
             }
 
             &__btn {
+                margin-top: 15px;
                 align-self: stretch;
             }
         }
+    }
+
+    .form-box__title {
+        max-width: 350px;
     }
 
     .geography {
@@ -265,16 +279,20 @@
             line-height: 20px;
         }
 
-        &__connect {
+        &__box {
             margin-top: 0;
-            padding: 30px 42px 23px 40px;
-            flex-basis: 60%;
+
             margin-bottom: -120px;
         }
 
         &__form {
             flex-direction: column;
         }
+    }
+
+    .ask-box {
+        padding: 30px 42px 23px 40px;
+        width: 60%;
     }
 
     .form__title {
@@ -337,6 +355,22 @@
             font-size: 30px;
             line-height: 38px;
         }
+
+        .form {
+
+            &__title,
+            &__btn {
+                flex-basis: 100%;
+            }
+
+            &__title {
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+
+                margin-bottom: 15px;
+            }
+        }
     }
 
     .geography {
@@ -390,14 +424,13 @@
             align-items: stretch;
         }
 
-        &__connect {
-            width: 100vw;
-        }
-
         &__info {
             padding: 0 15px;
             margin-bottom: 36px;
         }
+    }
+    .ask-box {
+        width: 100vw;
     }
 }
 
@@ -429,15 +462,18 @@
             line-height: 25px;
         }
 
-        &__box {
-            padding: 33px 28px 43px;
 
-        }
+    }
 
-        &__box-title {
+    .form-box {
+        padding: 33px 28px 43px;
+
+        &__title {
             max-width: 200px;
         }
     }
+
+
 
     .geography {
         &__subtitle {
@@ -491,14 +527,12 @@
         }
     }
 
-    .contacts {
-        &__connect {
-            padding-left: 40px;
-            padding-right: 40px;
-        }
-    }
-
     .form__comm .form__btn {
         width: 100%;
+    }
+    .ask-box {
+            padding-left: 40px;
+            padding-right: 40px;
+        
     }
 }

@@ -22,21 +22,23 @@
     }
 
     &__box {
-        background: url(../img/box-bg.png) center center / cover no-repeat;
-        background-color: #F4F8FF;
-        padding: 34px 72px 47px;
-        border-radius: 5px; 
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-        transform: translateY(35px);
-       
+       transform: translateY(35px);
     }
 
-    &__box-title {
-        margin-bottom: 25px;
+    
 
+}
+
+.form-box {
+    background: #F4F8FF url(../img/box-bg.png) center center / cover no-repeat;
+    padding: 34px 72px 47px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    
+    &__title {
+        margin-bottom: 25px;
         span {
             color: #4169C1;
         }
     }
-
 }
